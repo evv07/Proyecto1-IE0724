@@ -1,0 +1,61 @@
+Este es el proyecto del curso de Laboratorio de Programación
+y microcomputadores de la Escuela De Ingeniería Eléctrica de
+la Universidad de Costa Rica
+
+Estudiante: Esteban Vargas Vargas
+Carnet: B16998
+
+Se realizó la implementación de un árbol binario autobalanceable (AVL)
+
+Se cuenta con las siguientes carpetas:
+
+-build: Aquí dentro se encuentra el make file
+	Make: Compilación general del proyecto
+	Make run: Ejecución del programa principal
+	Make unittest: Compilación de las pruebas unitarias
+	Make run_unittest: Ejecución de las pruebas unitarias
+
+-include: Aquí están definidas las clases Node y AvlTree, con sus
+archivos de definición de funciones y de implementación de las mismas
+(.h y .cpp, respectivamente)
+
+-misc: Contiene los archivos de entrada que contienen los nombres 
+y cédulas. 
+	-input: 		aquí se encuentran los archivos brindados
+			por el profesor
+	-input_unit_tests:	contiene los archivos creados 
+			por el estudiante para las pruebas
+			unitarias
+
+-src: Aquí se encuentra el programa principal
+
+-test: Se encuentran las pruebas unitarias, las cuales se
+describen a continuación
+
+	UnitTest0: Prueba negativa. Se le da al programa un archivo de texto que no 
+		 existe, se espera obtener el error
+
+	UnitTest1: Prueba negativa. Se le da al programa un archivo de texto que contiene
+		 un nombre que no contiene solo letras, se espera error y que el programa
+   		 despliegue qué error fue y en qué línea lo encontró
+
+	UnitTest2: Prueba negativa. Se le da al programa un archivo de texto que contiene
+		 una cedula que no contiene solo numeros, se espera error y que el programa
+		 despliegue qué error fue y en qué línea lo encontró
+
+	UnitTest3: Prueba positiva, se le da un archivo al programa para que cree
+		 5 nodos válidos y prueba la rotación LL, se espera que el programa
+		 termine con éxito
+
+	UnitTest4: Prueba positiva, se le da un archivo al programa para que cree
+		 5 nodos válidos y prueba la rotación RR, se espera que el programa
+		 termine con éxito
+
+	UnitTest5: Prueba positiva, se le da un archivo al programa para que cree
+		 5 nodos válidos y prueba la rotación LR, se espera que el programa
+		 termine con éxito
+
+	UnitTest6: Prueba positiva, se le da un archivo al programa para que cree
+		 5 nodos válidos y prueba la rotación RL, se espera que el programa
+		 termine con éxito
+
